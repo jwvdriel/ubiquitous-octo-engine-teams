@@ -33,7 +33,7 @@
 }
 
 .container {
-  height: 100%;
+  min-height: 50vh;
   background-color: #fffefe;
 }
 
@@ -42,7 +42,6 @@
   grid-template-columns: 1fr 1fr;
   background-color: #f3f4f6;
   width: 80%;
-  height: 90%;
   margin: 6rem auto 0 auto;
   border-radius: 2rem;
 }
@@ -145,4 +144,55 @@ a {
   background-image: url(../assets/person_5@2x.png);
   background-repeat: no-repeat;
   background-position: bottom;
+}
+
+.description {
+  position: absolute;
+  width: 20%;
+  height: 80%;
+  top: 35%;
+}
+
+.description h2,
+.description p {
+  padding-left: 2rem;
+  color: #fff;
+}
+
+.description h2 {
+  font-size: var(--Label-font-size);
+  font-weight: var(--Outfit-SemiBold);
+  letter-spacing: -1px;
+}
+
+.description p {
+  font-size: var(--Body-font-textSize);
+  font-weight: var(--Outfit-regular);
+}
+
+.description-bottom h2,
+.description-bottom p {
+  padding-left: 2rem;
+  color: #fff;
+}
+
+.description-bottom h2 {
+  font-size: var(--Label-font-size);
+  font-weight: var(--Outfit-SemiBold);
+  letter-spacing: -1px;
+}
+
+.description-bottom p {
+  font-size: var(--Body-font-textSize);
+  font-weight: var(--Outfit-regular);
+}
+
+.description-bottom {
+  position: absolute;
+  top: 68%;
+}
+
+.position-left-image-text {
+  top: 68%;
+  left: 33%;
 }
