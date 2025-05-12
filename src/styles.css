@@ -48,18 +48,19 @@
 }
 
 .grid-left-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
+  display: grid;
   margin-left: 3rem;
-  margin-top: 2.5rem;
+  grid-template-rows: 50% 50%;
+}
+
+.layout {
+  padding-top: 2.5rem;
 }
 
 .first-anchortag {
   display: block;
   color: #263fa9;
-  font-size: var(--Body-font-textSize);
+  font-size: var(--Label-font-size);
   font-weight: var(--Outfit-SemiBold);
   padding-bottom: 1rem;
 }
@@ -72,8 +73,9 @@
 
 .grid-left-column p {
   font-weight: var(--Body-font-textSize);
+  font-size: var(--Label-font-size);
   color: #394150;
-  width: 68%;
+  width: 80%;
 }
 
 a {
@@ -92,24 +94,55 @@ a {
   align-items: end;
 }
 
+.grid-left-row a {
+  font-size: var(--Label-font-size);
+  font-weight: var(--Outfit-SemiBold);
+  color: #394150;
+  padding-bottom: 2rem;
+}
+
+.left-img {
+  height: 100%;
+  background-color: #9dc4f8;
+}
+
 .grid-right-column img {
   width: 100%;
+  position: relative;
+}
+
+.p {
+  position: absolute;
+  top: 70%;
+  right: 40%;
 }
 
 .top-left-img {
   background-color: #c1b6f8;
+  background-image: url(../assets/person_1@2x.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .top-right-img {
   background-color: #edacd2;
   border-top-right-radius: 2rem;
+  background-image: url(../assets/person_2@2x.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .bottom-left-img {
   background-color: #f8d8b0;
+  background-image: url(../assets/person_4@2x.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .bottom-right-img {
   background-color: #86e7d4;
   border-bottom-right-radius: 2rem;
+  background-image: url(../assets/person_5@2x.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
